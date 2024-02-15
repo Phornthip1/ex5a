@@ -71,10 +71,11 @@
 			   
 			   if(validate(t) == 0) return;
 			   
-			  
-			   
-			   alert("Temperature is "+t1+" in "+u1);
-			});
+			  var result = calaulate(t,u);
+
+			   //alert("Temperature is "+t1+" in "+u1);
+			   $("#result").html("temperature is <b>" +result.temp+"</b>  in  "+result.unit);
+						});
 		});
 	</script>
 </body>
